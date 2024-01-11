@@ -1,0 +1,15 @@
+module alu(
+	input [7:0]a, 
+	input [7:0]b, 
+	output reg [7:0]sum, 
+	output reg cout,
+	output reg [7:0]difference, 
+	output reg bout,
+	output reg [7:0]xor_output, 
+);
+	
+	always@( a or b)
+		 {difference,bout} = a - b;
+		 
+endmodule
+

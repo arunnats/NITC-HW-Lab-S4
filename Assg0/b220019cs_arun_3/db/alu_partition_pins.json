@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[7]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[0]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[1]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[2]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[3]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[4]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[5]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[6]",
+					"strict" : false
+				},
+				{
+					"name" : "difference[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_output[7]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "left_shift_output[7]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "a[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

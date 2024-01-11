@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Jan 11 22:49:25 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : eight_bit_adder
+Top-level Entity Name : eight_bit_adder
+Family : MAX 10
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

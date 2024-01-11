@@ -1,0 +1,29 @@
+|d_Latch
+d[0] => q[0].DATAB
+d[1] => q[1].DATAB
+d[2] => q[2].DATAB
+d[3] => q[3].DATAB
+d[4] => q[4].DATAB
+d[5] => q[5].DATAB
+d[6] => q[6].DATAB
+d[7] => q[7].DATAB
+enable => q[0].OUTPUTSELECT
+enable => q[1].OUTPUTSELECT
+enable => q[2].OUTPUTSELECT
+enable => q[3].OUTPUTSELECT
+enable => q[4].OUTPUTSELECT
+enable => q[5].OUTPUTSELECT
+enable => q[6].OUTPUTSELECT
+enable => q[7].OUTPUTSELECT
+enable => q[7].IN0
+reset => q[7].IN1
+q[0] <= q[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
