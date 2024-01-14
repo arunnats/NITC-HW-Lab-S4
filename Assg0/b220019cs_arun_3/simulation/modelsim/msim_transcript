@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:27 on Jan 11,2024
+# Start time: 19:18:29 on Jan 14,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 23:23:28 on Jan 11,2024, Elapsed time: 0:00:01
+# End time: 19:18:30 on Jan 14,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:28 on Jan 11,2024
+# Start time: 19:18:30 on Jan 14,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 23:23:29 on Jan 11,2024, Elapsed time: 0:00:01
+# End time: 19:18:31 on Jan 14,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:29 on Jan 11,2024
+# Start time: 19:18:31 on Jan 14,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 23:23:29 on Jan 11,2024, Elapsed time: 0:00:00
+# End time: 19:18:31 on Jan 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:29 on Jan 11,2024
+# Start time: 19:18:31 on Jan 14,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 23:23:31 on Jan 11,2024, Elapsed time: 0:00:02
+# End time: 19:18:33 on Jan 14,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:31 on Jan 11,2024
+# Start time: 19:18:33 on Jan 14,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 23:23:32 on Jan 11,2024, Elapsed time: 0:00:01
+# End time: 19:18:34 on Jan 14,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:32 on Jan 11,2024
+# Start time: 19:18:34 on Jan 14,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 23:23:33 on Jan 11,2024, Elapsed time: 0:00:01
+# End time: 19:18:35 on Jan 14,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:34 on Jan 11,2024
+# Start time: 19:18:35 on Jan 14,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 23:23:38 on Jan 11,2024, Elapsed time: 0:00:04
+# End time: 19:18:38 on Jan 14,2024, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -582,31 +582,31 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:40 on Jan 11,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3.v 
+# Start time: 19:18:39 on Jan 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 23:23:40 on Jan 11,2024, Elapsed time: 0:00:00
+# End time: 19:18:39 on Jan 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:23:40 on Jan 11,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3_tb.v 
+# Start time: 19:18:39 on Jan 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3_tb.v 
 # -- Compiling module b220019cs_arun_3_tb
 # 
 # Top level modules:
 # 	b220019cs_arun_3_tb
-# End time: 23:23:40 on Jan 11,2024, Elapsed time: 0:00:00
+# End time: 19:18:39 on Jan 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  b220019cs_arun_3_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" b220019cs_arun_3_tb 
-# Start time: 23:23:41 on Jan 11,2024
+# Start time: 19:18:39 on Jan 14,2024
 # Loading work.b220019cs_arun_3_tb
 # Loading work.alu
 # 
@@ -616,209 +616,49 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# 00100010 01010100 01 0 01110110 00000000 0 00000000  0
+# 10000111 00011000 00 0 00000000 00110111 1 00000000  0
+# 00110101 01100010 10 0 00000000 00000000 0 01010111  0
+# 00000000 00000010 11 0 00000000 00000000 0 00000000  0
+# 11101011 01111011 10 0 00000000 00000000 0 10010000  0
+# 01011110 11011000 01 1 00110110 00000000 0 00000000  0
+# 00111001 00110000 00 0 00000000 00000100 1 00000000  0
+# 01101010 11011100 01 1 01000110 00000000 0 00000000  0
+# 11110001 01011110 11 0 00000000 00000000 0 00000000226
+# 01101000 10101000 11 0 00000000 00000000 0 00000000208
+# 11001011 01001110 10 0 00000000 00000000 0 10000101  0
+# 01101010 10101111 01 1 00011001 00000000 0 00000000  0
+# 11000001 11001101 00 0 00000000 11111010 0 00000000  0
+# 11101011 01001100 10 0 00000000 00000000 0 10100111  0
+# 00000100 10110111 01 0 10111011 00000000 0 00000000  0
 # 00100100 10000001 01 0 10100101 00000000 0 00000000  0
-# a=00100100, b=10000001, operation=01, result=10100101
 # 01100011 00001101 01 0 01110000 00000000 0 00000000  0
-# a=01100011, b=00001101, operation=01, result=01110000
 # 01100101 00010010 01 0 01110111 00000000 0 00000000  0
-# a=01100101, b=00010010, operation=01, result=01110111
 # 00001101 01110110 01 0 10000011 00000000 0 00000000  0
-# a=00001101, b=01110110, operation=01, result=10000011
-# 11101101 10001100 01 0 01111001 00000000 0 00000000  0
-# a=11101101, b=10001100, operation=01, result=01111001
+# 11101101 10001100 01 1 01111001 00000000 0 00000000  0
 # 11000110 11000101 10 0 00000000 00000000 0 00000011  0
-# a=11000110, b=11000101, operation=10, result=00000000
 # 11100101 01110111 10 0 00000000 00000000 0 10010010  0
-# a=11100101, b=01110111, operation=10, result=00000000
 # 10001111 11110010 10 0 00000000 00000000 0 01111101  0
-# a=10001111, b=11110010, operation=10, result=00000000
-# 11101000 11000101 00 0 00000000 00100011 0 00000000  0
-# a=11101000, b=11000101, operation=00, result=00000000
+# 11101000 11000101 00 0 00000000 00010001 1 00000000  0
 # 10111101 00101101 01 0 11101010 00000000 0 00000000  0
-# a=10111101, b=00101101, operation=01, result=11101010
-# 01100011 00001010 00 0 00000000 01011001 0 00000000  0
-# a=01100011, b=00001010, operation=00, result=00000000
+# 01100011 00001010 00 0 00000000 00101100 1 00000000  0
 # 00100000 10101010 01 0 11001010 00000000 0 00000000  0
-# a=00100000, b=10101010, operation=01, result=11001010
 # 10010110 00010011 01 0 10101001 00000000 0 00000000  0
-# a=10010110, b=00010011, operation=01, result=10101001
 # 01010011 01101011 01 0 10111110 00000000 0 00000000  0
-# a=01010011, b=01101011, operation=01, result=10111110
 # 00000010 10101110 01 0 10110000 00000000 0 00000000  0
-# a=00000010, b=10101110, operation=01, result=10110000
 # 11001111 00100011 10 0 00000000 00000000 0 11101100  0
-# a=11001111, b=00100011, operation=10, result=00000000
 # 11001010 00111100 10 0 00000000 00000000 0 11110110  0
-# a=11001010, b=00111100, operation=10, result=00000000
-# 10001010 01000001 00 0 00000000 01001001 0 00000000  0
-# a=10001010, b=01000001, operation=00, result=00000000
+# 10001010 01000001 00 0 00000000 00100100 1 00000000  0
 # 01111000 10001001 11 0 00000000 00000000 0 00000000240
-# a=01111000, b=10001001, operation=11, result=00000000
 # 10110110 11000110 10 0 00000000 00000000 0 01110000  0
-# a=10110110, b=11000110, operation=10, result=00000000
 # 10111100 00101010 11 0 00000000 00000000 0 00000000120
-# a=10111100, b=00101010, operation=11, result=00000000
 # 01110001 10000101 11 0 00000000 00000000 0 00000000226
-# a=01110001, b=10000101, operation=11, result=00000000
 # 00111011 00111010 10 0 00000000 00000000 0 00000001  0
-# a=00111011, b=00111010, operation=10, result=00000000
-# 00010101 11110001 01 0 00000110 00000000 0 00000000  0
-# a=00010101, b=11110001, operation=01, result=00000110
+# 00010101 11110001 01 1 00000110 00000000 0 00000000  0
 # 01100010 01001100 11 0 00000000 00000000 0 00000000196
-# a=01100010, b=01001100, operation=11, result=00000000
-# 10001111 11111000 11 0 00000000 00000000 0 00000000 30
-# a=10001111, b=11111000, operation=11, result=00000000
-# 10011111 01011100 11 0 00000000 00000000 0 00000000 62
-# a=10011111, b=01011100, operation=11, result=00000000
-# 10001001 01001001 00 0 00000000 01000000 0 00000000  0
-# a=10001001, b=01001001, operation=00, result=00000000
-# 11010111 01010001 10 0 00000000 00000000 0 10000110  0
-# a=11010111, b=01010001, operation=10, result=00000000
-# 00001100 11000010 00 0 00000000 01001010 0 00000000  0
-# a=00001100, b=11000010, operation=00, result=00000000
-# 01110111 00111101 10 0 00000000 00000000 0 01001010  0
-# a=01110111, b=00111101, operation=10, result=00000000
-# 01111110 01101101 01 0 11101011 00000000 0 00000000  0
-# a=01111110, b=01101101, operation=01, result=11101011
-# 00011111 11010011 01 0 11110010 00000000 0 00000000  0
-# a=00011111, b=11010011, operation=01, result=11110010
-# 01111000 01011011 01 0 11010011 00000000 0 00000000  0
-# a=01111000, b=01011011, operation=01, result=11010011
-# 00111111 00101010 00 0 00000000 00010101 0 00000000  0
-# a=00111111, b=00101010, operation=00, result=00000000
-# 10000110 10001110 00 0 00000000 11111000 0 00000000  0
-# a=10000110, b=10001110, operation=00, result=00000000
-# 11111010 00100110 11 0 00000000 00000000 0 00000000244
-# a=11111010, b=00100110, operation=11, result=00000000
-# 10100011 00101111 11 0 00000000 00000000 0 00000000 70
-# a=10100011, b=00101111, operation=11, result=00000000
-# 01011111 01000100 11 0 00000000 00000000 0 00000000190
-# a=01011111, b=01000100, operation=11, result=00000000
-# 11001011 11100110 10 0 00000000 00000000 0 00101101  0
-# a=11001011, b=11100110, operation=10, result=00000000
-# 00101001 11101101 10 0 00000000 00000000 0 11000100  0
-# a=00101001, b=11101101, operation=10, result=00000000
-# 01100101 10110101 11 0 00000000 00000000 0 00000000202
-# a=01100101, b=10110101, operation=11, result=00000000
-# 01111001 01000100 00 0 00000000 00110101 0 00000000  0
-# a=01111001, b=01000100, operation=00, result=00000000
-# 00101010 10101011 10 0 00000000 00000000 0 10000001  0
-# a=00101010, b=10101011, operation=10, result=00000000
-# 11011100 10011010 01 0 01110110 00000000 0 00000000  0
-# a=11011100, b=10011010, operation=01, result=01110110
-# 11000011 01010110 10 0 00000000 00000000 0 10010101  0
-# a=11000011, b=01010110, operation=10, result=00000000
-# 01100111 00001010 10 0 00000000 00000000 0 01101101  0
-# a=01100111, b=00001010, operation=10, result=00000000
-# 00111000 01111001 00 0 00000000 10111111 0 00000000  0
-# a=00111000, b=01111001, operation=00, result=00000000
-# 10010100 10010011 00 0 00000000 00000001 0 00000000  0
-# a=10010100, b=10010011, operation=00, result=00000000
-# 01011001 11011011 01 0 00110100 00000000 0 00000000  0
-# a=01011001, b=11011011, operation=01, result=00110100
-# 11011001 01101101 10 0 00000000 00000000 0 10110100  0
-# a=11011001, b=01101101, operation=10, result=00000000
-# 11001010 10110110 01 0 10000000 00000000 0 00000000  0
-# a=11001010, b=10110110, operation=01, result=10000000
-# 01000110 00000100 11 0 00000000 00000000 0 00000000140
-# a=01000110, b=00000100, operation=11, result=00000000
-# 01101001 10110100 00 0 00000000 10110101 0 00000000  0
-# a=01101001, b=10110100, operation=00, result=00000000
-# 00101000 00101101 11 0 00000000 00000000 0 00000000 80
-# a=00101000, b=00101101, operation=11, result=00000000
-# 00101110 00001000 00 0 00000000 00100110 0 00000000  0
-# a=00101110, b=00001000, operation=00, result=00000000
-# 11111101 00101001 00 0 00000000 11010100 0 00000000  0
-# a=11111101, b=00101001, operation=00, result=00000000
-# 10000110 11011010 01 0 01100000 00000000 0 00000000  0
-# a=10000110, b=11011010, operation=01, result=01100000
-# 01100110 01110000 11 0 00000000 00000000 0 00000000204
-# a=01100110, b=01110000, operation=11, result=00000000
-# 10111010 01011110 10 0 00000000 00000000 0 11100100  0
-# a=10111010, b=01011110, operation=10, result=00000000
-# 11010101 00011010 01 0 11101111 00000000 0 00000000  0
-# a=11010101, b=00011010, operation=01, result=11101111
-# 00110111 10010110 00 0 00000000 10100001 0 00000000  0
-# a=00110111, b=10010110, operation=00, result=00000000
-# 00100110 10110110 01 0 11011100 00000000 0 00000000  0
-# a=00100110, b=10110110, operation=01, result=11011100
-# 11011100 10000110 00 0 00000000 01010110 0 00000000  0
-# a=11011100, b=10000110, operation=00, result=00000000
-# 01111110 11011011 11 0 00000000 00000000 0 00000000252
-# a=01111110, b=11011011, operation=11, result=00000000
-# 01111001 11111010 01 0 01110011 00000000 0 00000000  0
-# a=01111001, b=11111010, operation=01, result=01110011
-# 00010111 10100001 10 0 00000000 00000000 0 10110110  0
-# a=00010111, b=10100001, operation=10, result=00000000
-# 01010000 11110101 01 0 01000101 00000000 0 00000000  0
-# a=01010000, b=11110101, operation=01, result=01000101
-# 00101001 11000001 01 0 11101010 00000000 0 00000000  0
-# a=00101001, b=11000001, operation=01, result=11101010
-# 10011000 01001011 11 0 00000000 00000000 0 00000000 48
-# a=10011000, b=01001011, operation=11, result=00000000
-# 11101100 10001010 10 0 00000000 00000000 0 01100110  0
-# a=11101100, b=10001010, operation=10, result=00000000
-# 10101000 10101001 01 0 01010001 00000000 0 00000000  0
-# a=10101000, b=10101001, operation=01, result=01010001
-# 00001110 11100110 11 0 00000000 00000000 0 00000000 28
-# a=00001110, b=11100110, operation=11, result=00000000
-# 00101010 00101010 01 0 01010100 00000000 0 00000000  0
-# a=00101010, b=00101010, operation=01, result=01010100
-# 10011110 00111000 01 0 11010110 00000000 0 00000000  0
-# a=10011110, b=00111000, operation=01, result=11010110
-# 11001000 11001010 11 0 00000000 00000000 0 00000000144
-# a=11001000, b=11001010, operation=11, result=00000000
-# 01101011 11000111 10 0 00000000 00000000 0 10101100  0
-# a=01101011, b=11000111, operation=10, result=00000000
-# 10111010 11000100 01 0 01111110 00000000 0 00000000  0
-# a=10111010, b=11000100, operation=01, result=01111110
-# 10010010 10110100 11 0 00000000 00000000 0 00000000 36
-# a=10010010, b=10110100, operation=11, result=00000000
-# 10000110 11111010 10 0 00000000 00000000 0 01111100  0
-# a=10000110, b=11111010, operation=10, result=00000000
-# 00110010 10111101 00 0 00000000 01110101 0 00000000  0
-# a=00110010, b=10111101, operation=00, result=00000000
-# 11100100 11001010 01 0 10101110 00000000 0 00000000  0
-# a=11100100, b=11001010, operation=01, result=10101110
-# 10100001 10001110 11 0 00000000 00000000 0 00000000 66
-# a=10100001, b=10001110, operation=11, result=00000000
-# 00001011 11101111 01 0 11111010 00000000 0 00000000  0
-# a=00001011, b=11101111, operation=01, result=11111010
-# 00110110 01110101 11 0 00000000 00000000 0 00000000108
-# a=00110110, b=01110101, operation=11, result=00000000
-# 01101011 10001000 10 0 00000000 00000000 0 11100011  0
-# a=01101011, b=10001000, operation=10, result=00000000
-# 10011011 10010010 00 0 00000000 00001001 0 00000000  0
-# a=10011011, b=10010010, operation=00, result=00000000
-# 00101101 01001011 10 0 00000000 00000000 0 01100110  0
-# a=00101101, b=01001011, operation=10, result=00000000
-# 00011110 00001101 00 0 00000000 00010001 0 00000000  0
-# a=00011110, b=00001101, operation=00, result=00000000
-# 00011000 11010001 10 0 00000000 00000000 0 11001001  0
-# a=00011000, b=11010001, operation=10, result=00000000
-# 01000001 00111011 00 0 00000000 00000110 0 00000000  0
-# a=01000001, b=00111011, operation=00, result=00000000
-# 01010011 01010110 11 0 00000000 00000000 0 00000000166
-# a=01010011, b=01010110, operation=11, result=00000000
-# 11100010 00000100 11 0 00000000 00000000 0 00000000196
-# a=11100010, b=00000100, operation=11, result=00000000
-# 11011000 00010010 00 0 00000000 11000110 0 00000000  0
-# a=11011000, b=00010010, operation=00, result=00000000
-# 00111001 11100101 01 0 00011110 00000000 0 00000000  0
-# a=00111001, b=11100101, operation=01, result=00011110
-# 00101011 10000001 00 0 00000000 10101010 0 00000000  0
-# a=00101011, b=10000001, operation=00, result=00000000
-# 00100111 10100001 11 0 00000000 00000000 0 00000000 78
-# a=00100111, b=10100001, operation=11, result=00000000
-# 00000100 01011000 10 0 00000000 00000000 0 01011100  0
-# a=00000100, b=01011000, operation=10, result=00000000
-# 00010100 00010010 10 0 00000000 00000000 0 00000110  0
-# a=00010100, b=00010010, operation=10, result=00000000
-# 10110001 01010101 01 0 00000110 00000000 0 00000000  0
-# a=10110001, b=01010101, operation=01, result=00000110
-# ** Note: $finish    : C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3_tb.v(40)
-#    Time: 1 ns  Iteration: 0  Instance: /b220019cs_arun_3_tb
+# ** Note: $finish    : C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3_tb.v(100)
+#    Time: 400 ps  Iteration: 0  Instance: /b220019cs_arun_3_tb
 # 1
-# Break in Module b220019cs_arun_3_tb at C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3_tb.v line 40
-# End time: 23:24:44 on Jan 11,2024, Elapsed time: 0:01:03
+# Break in Module b220019cs_arun_3_tb at C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3_tb.v line 100
+# End time: 19:19:45 on Jan 14,2024, Elapsed time: 0:01:06
 # Errors: 0, Warnings: 0

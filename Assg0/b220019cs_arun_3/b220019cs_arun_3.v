@@ -12,24 +12,24 @@ module alu(
 
     always @(a or b or operation) begin
         {difference, bout, sum, cout, xor_output, left_shift_output} = 8'b0;
-
-        if (operation == 2'b00) begin
-            difference = a - b;
-            bout = 0; 
-        end
-
-        if (operation == 2'b01) begin 
-            sum = a + b;
-            cout = 0;
-        end
-
-        if (operation == 2'b10) begin
-            xor_output = a ^ b;
-        end
-
-        if (operation == 2'b11) begin
-            left_shift_output = a << 1;
-        end
+		  
+		  case(operation)
+			  2'b00: begin
+					{difference,bout} = a - b;
+			  end
+	
+			  2'b01: begin 
+					{cout,sum} = a + b;
+			  end
+	
+			  2'b10: begin
+					xor_output = a ^ b;
+			  end
+	
+			  2'b11: begin
+					left_shift_output = a << 1;
+			  end
+		  endcase
     end
 
 endmodule

@@ -34,9 +34,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/b220019cs_arun_3/b220019cs_arun_3_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg0/b220019cs_arun_3/b220019cs_arun_3_tb.v}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  b220019cs_arun_3_tb
 

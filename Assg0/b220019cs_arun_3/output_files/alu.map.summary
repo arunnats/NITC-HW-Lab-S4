@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Jan 11 23:23:07 2024
+Analysis & Synthesis Status : Successful - Sun Jan 14 19:16:49 2024
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : alu
 Top-level Entity Name : alu
 Family : MAX 10
-Total logic elements : 47
-    Total combinational functions : 47
+Total logic elements : 51
+    Total combinational functions : 51
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 52
