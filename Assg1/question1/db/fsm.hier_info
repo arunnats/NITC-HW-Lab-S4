@@ -1,0 +1,10 @@
+|fsm
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+in => out.DATAB
+in => state.S1.DATAIN
+in => Selector0.IN1
+in => next_state.S2.DATAB
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
