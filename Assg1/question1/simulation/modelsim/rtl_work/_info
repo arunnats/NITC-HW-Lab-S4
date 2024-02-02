@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim
 vfsm
-Z1 !s110 1706607463
+Z1 !s110 1706608621
 !i10b 1
-!s100 <M:Al:G@eVF;[EaRN^QOk2
-Ii1n7imRf:eSjIY[^DBXgl2
+!s100 LChAL380M5<Zc2Q9D>Ucf0
+IjSjjgH0GnHaz8:]lC0C>n0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1706607221
+w1706608182
 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v
 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1706607463.000000
+Z4 !s108 1706608621.000000
 !s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v|
 !i113 1
@@ -33,11 +33,11 @@ Z7 tCvgOpt 0
 vfsm_tb
 R1
 !i10b 1
-!s100 1d?N_U4S>H8[0W73Ek^S]2
-ING0TIW5^8HRS26:gPMo6i3
+!s100 6oZzGP[DZkZhFUFY=b5JL0
+Ih9UiNZ>_<g_k1b59Z]LOL1
 R2
 R0
-w1706607398
+w1706608484
 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v
 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v
 L0 1

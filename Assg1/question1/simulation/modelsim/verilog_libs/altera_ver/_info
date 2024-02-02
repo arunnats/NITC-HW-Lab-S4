@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1706607453
+Z1 !s110 1706608612
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 ID:iD7Z8K2@]7`ebSaEY3@3
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1706607452.000000
+Z7 !s108 1706608611.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
@@ -51,7 +51,7 @@ R9
 R10
 R11
 valt_inbuf
-Z12 !s110 1706607452
+R1
 !i10b 1
 !s100 _H]4>cOVIbRnagZRTG>;X2
 I<HhXAg0A6@V]SdTQWSimF2
@@ -135,7 +135,7 @@ R9
 R10
 R11
 valt_outbuf
-R12
+R1
 !i10b 1
 !s100 DSz[S>oAL6k5JmP:AMidm3
 Iz[<o`OCPYE137Aoon[13C3
@@ -177,7 +177,7 @@ R9
 R10
 R11
 valt_outbuf_tri
-R12
+R1
 !i10b 1
 !s100 W_aHHNCIbgFQ2:hmFQcI]3
 I97FOoES_X_OKQE@]6:`@23
@@ -219,7 +219,7 @@ R9
 R10
 R11
 vcarry
-R12
+Z12 !s110 1706608611
 !i10b 1
 !s100 0ICFPGeo=D<cUPW66HGND3
 Iz77ijUON;W9jNnEaNoOT_1
@@ -282,7 +282,7 @@ R9
 R10
 R11
 vclklock
-R12
+R1
 !i10b 1
 !s100 8>?<9H3`ZW;naj50TEClB2
 I[eBEYPf1S>iETUOXISJG63
@@ -471,7 +471,7 @@ R9
 R10
 R11
 vjkff
-R12
+R1
 !i10b 1
 !s100 XAhQW7Mb[?eT4aNP=OiBH3
 IggSWhc?=U42jhOIGIlcNN2
@@ -492,7 +492,7 @@ R9
 R10
 R11
 vjkffe
-R12
+R1
 !i10b 1
 !s100 ?JZ@CQA5@IaWA;`IVFW0C1
 IH[nj?;NWP7WC7]aANRnHF0
@@ -640,7 +640,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@h@i@g@h
 UPRIM_GDFF_HIGH_SCLR_PRIORITY
-R1
+!s110 1706608613
 !i10b 1
 !s100 F63MIm7BDi6=;U3:nVoTc3
 Ij;=HTKU[9kBUfQHzoB8Z91
@@ -727,7 +727,7 @@ R9
 R10
 R11
 vprim_gsrff
-R12
+R1
 !i10b 1
 !s100 Mf`Wc027IY22Q>MFoS8FH0
 INX]>9nLWVfk@g[kzjX1L81
@@ -811,7 +811,7 @@ R9
 R10
 R11
 vsrff
-R12
+R1
 !i10b 1
 !s100 6iMGleC3n4`GNMD4]DD]V3
 I;7^obd4jKZ3ChU?Y]ekN:3
@@ -832,7 +832,7 @@ R9
 R10
 R11
 vsrffe
-R12
+R1
 !i10b 1
 !s100 dgQW@Xnk`XB>QBaIdL=4b1
 Ia=QH^JWMl@k`C64l@V^YW2

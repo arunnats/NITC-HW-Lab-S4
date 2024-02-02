@@ -1,6 +1,12 @@
 
+State Machine - |fsm|next_state
+Name next_state.A next_state.C next_state.B 
+next_state.A 0 0 0 
+next_state.B 1 0 1 
+next_state.C 1 1 0 
+
 State Machine - |fsm|state
-Name state.S0 state.S2 state.S1 
-state.S0 0 0 0 
-state.S1 1 0 1 
-state.S2 1 1 0 
+Name state.A state.C state.B 
+state.A 0 0 0 
+state.B 1 0 1 
+state.C 1 1 0 

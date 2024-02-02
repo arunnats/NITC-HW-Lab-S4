@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:32 on Jan 30,2024
+# Start time: 15:26:51 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 15:07:33 on Jan 30,2024, Elapsed time: 0:00:01
+# End time: 15:26:53 on Jan 30,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:34 on Jan 30,2024
+# Start time: 15:26:53 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 15:07:34 on Jan 30,2024, Elapsed time: 0:00:00
+# End time: 15:26:53 on Jan 30,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:34 on Jan 30,2024
+# Start time: 15:26:53 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 15:07:35 on Jan 30,2024, Elapsed time: 0:00:01
+# End time: 15:26:54 on Jan 30,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:35 on Jan 30,2024
+# Start time: 15:26:54 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 15:07:36 on Jan 30,2024, Elapsed time: 0:00:01
+# End time: 15:26:55 on Jan 30,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:37 on Jan 30,2024
+# Start time: 15:26:56 on Jan 30,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 15:07:38 on Jan 30,2024, Elapsed time: 0:00:01
+# End time: 15:26:56 on Jan 30,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:38 on Jan 30,2024
+# Start time: 15:26:57 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 15:07:39 on Jan 30,2024, Elapsed time: 0:00:01
+# End time: 15:26:58 on Jan 30,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:39 on Jan 30,2024
+# Start time: 15:26:58 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 15:07:42 on Jan 30,2024, Elapsed time: 0:00:03
+# End time: 15:27:01 on Jan 30,2024, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,44 +584,36 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:43 on Jan 30,2024
+# Start time: 15:27:01 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v 
 # -- Compiling module fsm
 # 
 # Top level modules:
 # 	fsm
-# End time: 15:07:43 on Jan 30,2024, Elapsed time: 0:00:00
+# End time: 15:27:01 on Jan 30,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1 {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:07:43 on Jan 30,2024
+# Start time: 15:27:01 on Jan 30,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v 
 # -- Compiling module fsm_tb
 # 
 # Top level modules:
 # 	fsm_tb
-# End time: 15:07:43 on Jan 30,2024, Elapsed time: 0:00:00
+# End time: 15:27:01 on Jan 30,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  fsm_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" fsm_tb 
-# Start time: 15:07:43 on Jan 30,2024
+# Start time: 15:27:01 on Jan 30,2024
 # Loading work.fsm_tb
-# ** Error: (vsim-3033) C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v(8): Instantiation of 'FSM' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /fsm_tb File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v
-#         Searched libraries:
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/verilog_libs/altera_ver
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/verilog_libs/lpm_ver
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/verilog_libs/sgate_ver
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/verilog_libs/altera_mf_ver
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/verilog_libs/altera_lnsim_ver
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/verilog_libs/fiftyfivenm_ver
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/rtl_work
-#             C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/simulation/modelsim/rtl_work
+# Loading work.fsm
+# ** Error (suppressible): (vsim-3053) C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm_tb.v(7): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ps  Iteration: 0  Instance: /fsm_tb/testbench File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/question1/fsm.v
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./fsm_run_msim_rtl_verilog.do PAUSED at line 41
-# End time: 15:13:04 on Jan 30,2024, Elapsed time: 0:05:21
+# End time: 15:27:17 on Jan 30,2024, Elapsed time: 0:00:16
 # Errors: 1, Warnings: 0

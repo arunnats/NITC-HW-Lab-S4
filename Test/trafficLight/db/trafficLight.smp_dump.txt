@@ -1,0 +1,5 @@
+
+State Machine - |trafficLight|state
+Name state.EW_GREEN 
+state.NS_GREEN 0 
+state.EW_GREEN 1 

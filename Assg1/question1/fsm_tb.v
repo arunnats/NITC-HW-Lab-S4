@@ -1,31 +1,19 @@
 module fsm_tb;
+reg in, 
+reset, 
+clk;
+wire out;
 
-  reg clk;
-  reg reset;
-  reg in;
-  wire out;
+fsm testbench(out, in, clk, reset);
 
-  FSM uut (
-    .clk(clk),
-    .reset(reset),
-    .in(in),
-    .out(out)
-  );
+initial 
 
-  initial begin
-    clk = 0;
-    forever #5 clk = ~clk;
-  end
+begin
+in = 0;
+reset = 1;
+clk = 0;	
+end
 
-  initial begin
-    reset = 1; in = 0; #10;
-    reset = 0; #10; 
-    in = 1; #10;
-    in = 0; #10;
-    in = 1; #10;
-    in = 1; #10;
-    in = 0; #10;
-    $finish;
-  end
-
+always #25 {in, reset} = $random;
+always #25 clk = ~clk;
 endmodule

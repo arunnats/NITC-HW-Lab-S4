@@ -1,0 +1,9 @@
+|trafficLight
+NS_green <= <VCC>
+NS_red <= <GND>
+EW_green <= <GND>
+EW_red <= <VCC>
+clk => state.CLK
+rst_n => state.PRESET
+
+

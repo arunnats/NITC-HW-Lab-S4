@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/simulation/modelsim
+vstateMachine
+!s110 1706609654
+!i10b 1
+!s100 lDW:e_h2cTJJBkc9<PO1n1
+IQ?OZeI]:=?2MU_OIk2DM[2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1706609594
+8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine.v
+FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1706609654.000000
+!s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne
+Z6 tCvgOpt 0
+nstate@machine
+vstateMachineTestBench
+!s110 1706609655
+!i10b 1
+!s100 UhV9EE@>on^MzO8:C6Ko71
+I<=BRa6Y[6Mn4MI;8m4WjU0
+R1
+R0
+w1706609592
+8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine_Test.v
+FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine_Test.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+!s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine_Test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg1/QuestionOne/stateMachine_Test.v|
+!i113 1
+R4
+R5
+R6
+nstate@machine@test@bench
