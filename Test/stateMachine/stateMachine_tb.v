@@ -1,17 +1,44 @@
 module stateMachine_tb;
-    reg x_in, reset, clk;
-    wire y_out;
 
-    stateMachine testbench(y_out, x_in, clk, reset);
+	reg clk,
+	reset,
+	x;
+	wire y;
 
-    initial begin
-        x_in = 0;
-        reset = 1;
-        #10
-        reset = 0;
-        clk = 0;	
-    end
+	stateMachine testbench(.clk(clk),.reset(reset),.x(x),.y(y));
 
-    always #25 {x_in} <= $random;
-    always #25 clk <= ~clk;
+	initial begin 
+		clk=1'b1;
+		repeat(2000)#5 clk=~clk;
+		#5000 $finish;
+	end
+
+	initial begin
+	
+		#5 reset=0;
+		#5 reset=1;
+		#10 x=0;
+		#10 x=1;
+		#10 x=0;
+		#10 x=1;
+		#10 x=0;
+		#10 x=1;
+		#10 x=1;
+		#5 reset=0;
+		#10 x=0;
+		#10 x=1;
+		#10 x=0;
+		#10 x=1;
+		#10 x=0;
+		#10 x=1;
+		#5 reset=1;
+		#10 x=1;
+		#10 x=0;
+		#10 x=1;
+		#10 x=1;
+	end
+	always #10 x= $random;
+	always #30 reset= $random;
+
+
 endmodule

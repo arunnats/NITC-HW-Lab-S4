@@ -1,50 +1,47 @@
 module stateMachine(
-	output reg y_out,
-	input x_in,clk,reset);
+output reg y,
+input x,
+clk,
+reset
+);
+
 reg [1:0] state,next_state;
-parameter A = 2'b00, B = 2'b01, C = 2'b10;
+parameter s0 = 2'b00, s1 = 2'b01, s2 = 2'b10 ;
 
-always@(posedge clk)
-begin
-	if (reset==1) state = A;
-	else state=next_state;
-	
+always@(posedge clk,negedge reset)begin
 
-		case (state)
-			A:
-				if (x_in)
-				begin
-					next_state = B;
-					y_out = 0;
-				end
-				else
-				begin
-					next_state = A;
-					y_out = 0;
-				end
-				
-			B:
-				if (x_in) 
-				begin
-					next_state = B;
-					y_out = 0;
-				end
-				else 
-				begin
-					next_state = C;
-					y_out = 0;
-				end
-			C:
-				if (x_in) 
-				begin
-					next_state = B;
-					y_out = 1;
-				end
-				else 
-				begin
-					next_state = A;
-					y_out = 1;
-				end
-	endcase
+if (reset==0) state <= s0;
+else state<=next_state;
+
+end
+
+always @ (state, x)begin
+
+case (state)
+
+s0:begin
+if (x) next_state = s1; else next_state = s0;
+end
+
+s1:begin
+if (x) next_state = s1; else next_state = s2;
+end
+
+s2:begin
+if (x) next_state = s1; else next_state = s0;
+end
+
+endcase
+end
+
+always @ (state, x)begin
+
+case (state)
+
+s0,s1:y = 0;
+
+s2: y = x;
+
+endcase
 end
 endmodule

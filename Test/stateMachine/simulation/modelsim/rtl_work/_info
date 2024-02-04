@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/simulation/modelsim
 vstateMachine
-Z1 !s110 1706854110
+Z1 !s110 1707019529
 !i10b 1
-!s100 lDW:e_h2cTJJBkc9<PO1n1
-I^jgaKDmQ3TAWN>L<TLB5N2
+!s100 9UT3igJ;]F7?U5MO[g1j]2
+I>iINH?7:c]>P^h`7>oAH70
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1706850942
+w1707018530
 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine.v
 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine.v
 L0 1
@@ -23,22 +23,22 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1706854109.000000
+Z4 !s108 1707019529.000000
 !s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine
-Z6 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine
+Z7 tCvgOpt 0
 nstate@machine
 vstateMachine_tb
 R1
 !i10b 1
-!s100 >`?W_0J@Wj9Oi@`C3J5@]1
-IY08bf^Rnd38102I`_nY>g2
+!s100 ^>P4i5NzjGBYHLlL3=ESR1
+IY`8AdXZ18CiI[_j_k`@9F0
 R2
 R0
-w1706854026
+w1707019475
 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine_tb.v
 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine_tb.v
 L0 1
@@ -46,11 +46,11 @@ R3
 r1
 !s85 0
 31
-!s108 1706854110.000000
+R4
 !s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/stateMachine_tb.v|
 !i113 1
-R4
 R5
 R6
+R7
 nstate@machine_tb

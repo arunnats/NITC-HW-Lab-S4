@@ -4,11 +4,11 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "y_out",
+					"name" : "y",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "x",
 					"strict" : false
 				},
 				{
@@ -16,7 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "x_in",
+					"name" : "reset",
 					"strict" : false
 				}
 			]

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Feb  2 11:37:25 2024
+Analysis & Synthesis Status : Successful - Sun Feb  4 09:40:42 2024
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : stateMachine
 Top-level Entity Name : stateMachine
 Family : MAX 10
 Total logic elements : 3
     Total combinational functions : 2
-    Dedicated logic registers : 3
-Total registers : 3
+    Dedicated logic registers : 2
+Total registers : 2
 Total pins : 4
 Total virtual pins : 0
 Total memory bits : 0
