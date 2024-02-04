@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Feb  2 13:22:59 2024
+Analysis & Synthesis Status : Successful - Sun Feb  4 10:13:59 2024
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : trafficLight
 Top-level Entity Name : trafficLight
 Family : MAX 10
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
+Total logic elements : 5
+    Total combinational functions : 4
+    Dedicated logic registers : 5
+Total registers : 5
 Total pins : 6
 Total virtual pins : 0
 Total memory bits : 0

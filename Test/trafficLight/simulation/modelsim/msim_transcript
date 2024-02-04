@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:22 on Feb 02,2024
+# Start time: 10:14:51 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 13:23:23 on Feb 02,2024, Elapsed time: 0:00:01
+# End time: 10:14:52 on Feb 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:23 on Feb 02,2024
+# Start time: 10:14:52 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 13:23:24 on Feb 02,2024, Elapsed time: 0:00:01
+# End time: 10:14:53 on Feb 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:24 on Feb 02,2024
+# Start time: 10:14:53 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 13:23:24 on Feb 02,2024, Elapsed time: 0:00:00
+# End time: 10:14:53 on Feb 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:25 on Feb 02,2024
+# Start time: 10:14:53 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 13:23:26 on Feb 02,2024, Elapsed time: 0:00:01
+# End time: 10:14:55 on Feb 04,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:27 on Feb 02,2024
+# Start time: 10:14:55 on Feb 04,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 13:23:28 on Feb 02,2024, Elapsed time: 0:00:01
+# End time: 10:14:56 on Feb 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:28 on Feb 02,2024
+# Start time: 10:14:57 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 13:23:29 on Feb 02,2024, Elapsed time: 0:00:01
+# End time: 10:14:58 on Feb 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:29 on Feb 02,2024
+# Start time: 10:14:58 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 13:23:33 on Feb 02,2024, Elapsed time: 0:00:04
+# End time: 10:15:01 on Feb 04,2024, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,29 +584,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:34 on Feb 02,2024
+# Start time: 10:15:02 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v 
 # -- Compiling module trafficLight
 # 
 # Top level modules:
 # 	trafficLight
-# End time: 13:23:34 on Feb 02,2024, Elapsed time: 0:00:00
+# End time: 10:15:02 on Feb 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight {C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:23:34 on Feb 02,2024
+# Start time: 10:15:02 on Feb 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight" C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v 
 # -- Compiling module tb_traffic
 # 
 # Top level modules:
 # 	tb_traffic
-# End time: 13:23:34 on Feb 02,2024, Elapsed time: 0:00:00
+# End time: 10:15:02 on Feb 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_traffic
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_traffic 
-# Start time: 13:23:34 on Feb 02,2024
+# Start time: 10:15:02 on Feb 04,2024
 # Loading work.tb_traffic
 # Loading work.trafficLight
 # 
@@ -616,9 +616,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $finish    : C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v(24)
-#    Time: 1010 ps  Iteration: 0  Instance: /tb_traffic
-# 1
-# Break in Module tb_traffic at C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v line 24
-# End time: 15:33:49 on Feb 02,2024, Elapsed time: 2:10:15
+# End time: 10:15:59 on Feb 04,2024, Elapsed time: 0:00:57
 # Errors: 0, Warnings: 0

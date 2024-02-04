@@ -1,5 +1,6 @@
 
 State Machine - |trafficLight|state
-Name state.EW_GREEN 
-state.NS_GREEN 0 
-state.EW_GREEN 1 
+Name state.A state.C state.B 
+state.A 0 0 0 
+state.B 1 0 1 
+state.C 1 1 0 

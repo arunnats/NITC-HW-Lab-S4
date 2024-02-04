@@ -1,28 +1,22 @@
-//`timescale 1ns / 1ps
-
 module tb_traffic;
-    reg clk, rst_n;
-    wire NS_green, NS_red, EW_green, EW_red;
 
-    trafficLight u1 (
-        .NS_green(NS_green), 
-        .NS_red(NS_red), 
-        .EW_green(EW_green), 
-        .EW_red(EW_red), 
-        .clk(clk), 
-        .rst_n(rst_n)
-    );
+    reg clk, reset;
+    wire NS_red, NS_green, EW_red, EW_green;
 
-    initial begin
-        clk = 0;
-        rst_n = 0;
+    trafficLight u1(.clk(clk),.reset(reset),.NS_red(NS_red),.NS_green(NS_green),.EW_red(EW_red),.EW_green(EW_green));
 
-        #10 rst_n = 1;
-
-        #1000 rst_n = 0;
-
-        $finish;
+    initial begin 
+        clk = 1'b0;
+        repeat(1000)#5 clk = ~clk; 
     end
 
-    always #5 clk = ~clk;
+    initial begin
+        #10 reset = 1'b1;
+        #10 reset = 1'b0; 
+		  #600 reset = 1'b1;
+        #50 reset = 1'b0; 
+		  #600 reset = 1'b1;
+        #50 reset = 1'b0; 
+    end
+
 endmodule

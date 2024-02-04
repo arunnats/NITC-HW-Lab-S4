@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trafficLight
-Fri Feb  2 13:22:59 2024
+Sun Feb  4 10:13:59 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -13,12 +13,14 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |trafficLight
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  8. State Machine - |trafficLight|state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |trafficLight
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +47,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb  2 13:22:59 2024          ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb  4 10:13:59 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; trafficLight                                   ;
 ; Top-level Entity Name              ; trafficLight                                   ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 0                                              ;
-;     Total combinational functions  ; 0                                              ;
-;     Dedicated logic registers      ; 0                                              ;
-; Total registers                    ; 0                                              ;
+; Total logic elements               ; 5                                              ;
+;     Total combinational functions  ; 4                                              ;
+;     Dedicated logic registers      ; 5                                              ;
+; Total registers                    ; 5                                              ;
 ; Total pins                         ; 6                                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -159,10 +161,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -175,35 +178,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-;                                             ;                 ;
-; Total combinational functions               ; 0               ;
-; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 0               ;
-;     -- 3 input functions                    ; 0               ;
-;     -- <=2 input functions                  ; 0               ;
-;                                             ;                 ;
-; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 0               ;
-;     -- arithmetic mode                      ; 0               ;
-;                                             ;                 ;
-; Total registers                             ; 0               ;
-;     -- Dedicated logic registers            ; 0               ;
-;     -- I/O registers                        ; 0               ;
-;                                             ;                 ;
-; I/O pins                                    ; 6               ;
-;                                             ;                 ;
-; Embedded Multiplier 9-bit elements          ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; NS_green~output ;
-; Maximum fan-out                             ; 1               ;
-; Total fan-out                               ; 6               ;
-; Average fan-out                             ; 0.50            ;
-+---------------------------------------------+-----------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 5         ;
+;                                             ;           ;
+; Total combinational functions               ; 4         ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 4         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 4         ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 5         ;
+;     -- Dedicated logic registers            ; 5         ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 6         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 5         ;
+; Total fan-out                               ; 31        ;
+; Average fan-out                             ; 1.48      ;
++---------------------------------------------+-----------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,9 +215,32 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+--------------+--------------+
-; |trafficLight              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |trafficLight       ; trafficLight ; work         ;
+; |trafficLight              ; 4 (4)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |trafficLight       ; trafficLight ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------+
+; State Machine - |trafficLight|state   ;
++---------+---------+---------+---------+
+; Name    ; state.A ; state.C ; state.B ;
++---------+---------+---------+---------+
+; state.A ; 0       ; 0       ; 0       ;
+; state.B ; 1       ; 0       ; 1       ;
+; state.C ; 1       ; 1       ; 0       ;
++---------+---------+---------+---------+
+
+
++-------------------------------------------------------------------+
+; Registers Removed During Synthesis                                ;
++---------------------------------------+---------------------------+
+; Register name                         ; Reason for Removal        ;
++---------------------------------------+---------------------------+
+; NS_red~reg0                           ; Merged with EW_green~reg0 ;
+; NS_green~reg0                         ; Merged with EW_red~reg0   ;
+; Total Number of Removed Registers = 2 ;                           ;
++---------------------------------------+---------------------------+
 
 
 +------------------------------------------------------+
@@ -221,14 +248,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; EW_red~reg0                            ; 3       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------+
@@ -236,8 +273,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+-----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                ;
 +----------------+-------+-----------------------------------------------------+
-; NS_GREEN       ; 1     ; Unsigned Binary                                     ;
-; EW_GREEN       ; 1     ; Unsigned Binary                                     ;
+; A              ; 00    ; Unsigned Binary                                     ;
+; B              ; 01    ; Unsigned Binary                                     ;
+; C              ; 10    ; Unsigned Binary                                     ;
+; D              ; 11    ; Unsigned Binary                                     ;
 +----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -248,12 +287,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 6                           ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 2                           ;
+; cycloneiii_ff         ; 5                           ;
+;     CLR               ; 3                           ;
+;     ENA CLR           ; 2                           ;
+; cycloneiii_lcell_comb ; 5                           ;
+;     normal            ; 5                           ;
+;         1 data inputs ; 5                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.75                        ;
 +-----------------------+-----------------------------+
 
 
@@ -272,53 +314,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Feb  2 13:22:49 2024
+    Info: Processing started: Sun Feb  4 10:13:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trafficLight -c trafficLight
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file trafficlight.v
     Info (12023): Found entity 1: trafficLight File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_traffic.v
-    Info (12023): Found entity 1: tb_traffic File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v Line: 3
+    Info (12023): Found entity 1: tb_traffic File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v Line: 1
 Info (12127): Elaborating entity "trafficLight" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at trafficLight.v(27): variable "state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 27
-Warning (10272): Verilog HDL Case Statement warning at trafficLight.v(32): case item expression covers a value already covered by a previous case item File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 32
-Warning (10270): Verilog HDL Case Statement warning at trafficLight.v(27): incomplete case statement has no default case item File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 27
-Info (10264): Verilog HDL Case Statement information at trafficLight.v(27): all case item expressions in this case statement are onehot File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 27
-Warning (10240): Verilog HDL Always Construct warning at trafficLight.v(25): inferring latch(es) for variable "NS_green", which holds its previous value in one or more paths through the always construct File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at trafficLight.v(25): inferring latch(es) for variable "NS_red", which holds its previous value in one or more paths through the always construct File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at trafficLight.v(25): inferring latch(es) for variable "EW_green", which holds its previous value in one or more paths through the always construct File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at trafficLight.v(25): inferring latch(es) for variable "EW_red", which holds its previous value in one or more paths through the always construct File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at trafficLight.v(25): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Info (10041): Inferred latch for "next_state" at trafficLight.v(25) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Info (10041): Inferred latch for "EW_red" at trafficLight.v(25) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Info (10041): Inferred latch for "EW_green" at trafficLight.v(25) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Info (10041): Inferred latch for "NS_red" at trafficLight.v(25) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Info (10041): Inferred latch for "NS_green" at trafficLight.v(25) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 25
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "NS_green" is stuck at VCC File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 12
-    Warning (13410): Pin "NS_red" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 12
-    Warning (13410): Pin "EW_green" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 12
-    Warning (13410): Pin "EW_red" is stuck at VCC File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 12
-Info (144001): Generated suppressed messages file C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/output_files/trafficLight.map.smsg
+Info (13000): Registers with preset signals will power-up high File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 1
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 11
-    Warning (15610): No output dependent on input pin "rst_n" File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v Line: 11
-Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 4 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Fri Feb  2 13:22:59 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:11
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/output_files/trafficLight.map.smsg.
+    Info (21061): Implemented 5 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Sun Feb  4 10:13:59 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:12
 
 

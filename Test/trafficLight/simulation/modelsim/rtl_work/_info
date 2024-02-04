@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/simulation/modelsim
 vtb_traffic
-Z1 !s110 1706860414
+Z1 !s110 1707021902
 !i10b 1
-!s100 AV2i7EhkS@c:koG7m>MHi1
-I^8h:[CVh1X[I>dA;Nk6Ci2
+!s100 jnWg<=Y_18h@I:gOD9<]:2
+IOJ3S[OzZkZSMXgTKnn2=g0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1706855835
+w1707021827
 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v
 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v
-L0 3
+L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1706860414.000000
+Z4 !s108 1707021902.000000
 !s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/tb_traffic.v|
 !i113 1
@@ -33,11 +33,11 @@ Z7 tCvgOpt 0
 vtrafficLight
 R1
 !i10b 1
-!s100 Sk7fifK6?OhcIfbZ@hEaA2
-I<hlZSXj][<d^fJGeYnXi72
+!s100 Z2fnKc9V=FH`0Q;j9KPZf2
+IGg6Aj=zUzlnJlQFh^DVgg0
 R2
 R0
-w1706860367
+w1707021826
 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v
 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/trafficLight/trafficLight.v
 L0 1

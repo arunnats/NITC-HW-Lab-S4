@@ -2,7 +2,32 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "NS_red",
+					"strict" : false
+				},
+				{
+					"name" : "NS_green",
+					"strict" : false
+				},
+				{
+					"name" : "EW_red",
+					"strict" : false
+				},
+				{
+					"name" : "EW_green",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
