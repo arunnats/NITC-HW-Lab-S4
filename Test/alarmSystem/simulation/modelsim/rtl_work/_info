@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/simulation/modelsim
+valarmSystem
+Z1 !s110 1707023199
+!i10b 1
+!s100 CZ7I3D_M8FXL@HDa?Ln2I0
+I^Mn@dDNJjZ][IK[BWZGEn3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1707022164
+8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem.v
+FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1707023199.000000
+!s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem
+Z7 tCvgOpt 0
+nalarm@system
+valarmSystem_tb
+R1
+!i10b 1
+!s100 60N9j>lje^<K:LkeQY<OV0
+I@6E^]XfIz`6keI4OId4[d0
+R2
+R0
+w1707023042
+8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem_tb.v
+FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/alarmSystem/alarmSystem_tb.v|
+!i113 1
+R5
+R6
+R7
+nalarm@system_tb

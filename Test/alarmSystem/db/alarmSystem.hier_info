@@ -1,0 +1,26 @@
+|alarmSystem
+selsw[0] << Selector3.DB_MAX_OUTPUT_PORT_TYPE
+selsw[1] << Selector2.DB_MAX_OUTPUT_PORT_TYPE
+selsw[2] << <GND>
+x => Selector1.IN2
+x => Selector1.IN3
+x => Selector1.IN4
+x => Selector1.IN5
+x => Selector2.IN1
+x => Selector3.IN1
+x => next_state.s1.DATAB
+x => next_state.s2.DATAB
+x => next_state.s3.DATAB
+x => Selector0.IN3
+clk => delay_counter[0].CLK
+clk => delay_counter[1].CLK
+clk => delay_counter[2].CLK
+clk => delay_counter[3].CLK
+clk => state~1.DATAIN
+reset => delay_counter[0].ACLR
+reset => delay_counter[1].ACLR
+reset => delay_counter[2].ACLR
+reset => delay_counter[3].ACLR
+reset => state~3.DATAIN
+
+

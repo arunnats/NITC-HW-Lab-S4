@@ -1,0 +1,9 @@
+
+State Machine - |alarmSystem|state
+Name state.wrong state.unlock state.s3 state.s2 state.s1 state.s0 
+state.s0 0 0 0 0 0 0 
+state.s1 0 0 0 0 1 1 
+state.s2 0 0 0 1 0 1 
+state.s3 0 0 1 0 0 1 
+state.unlock 0 1 0 0 0 1 
+state.wrong 1 0 0 0 0 1 
