@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/simulation/modelsim
+vpractiseSim
+Z1 !s110 1707716213
+!i10b 1
+!s100 fZ^LYJkYll6JCHaMZbeEU1
+IEKA7<g>YQbDVM3g5QDjLQ0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1707713761
+8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim.v
+FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1707716213.000000
+!s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim
+Z7 tCvgOpt 0
+npractise@sim
+vpractiseSim_tb
+R1
+!i10b 1
+!s100 4[S>TNR?KZhS`XmW<_E8e2
+I6OX<2Y4a5=BMg?4KmOQ2m1
+R2
+R0
+w1707716149
+8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim_tb.v
+FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/practiseSim/practiseSim_tb.v|
+!i113 1
+R5
+R6
+R7
+npractise@sim_tb

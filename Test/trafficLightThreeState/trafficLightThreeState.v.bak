@@ -1,0 +1,50 @@
+module trafficLightThreeState(
+	output reg NS_green,
+	output reg EW_green,
+	output reg NS_yellow,
+	output reg EW_yellow,
+	output reg NS_red,
+	output reg NS_red,
+	input clk,
+	input reset
+);
+
+reg [2:0] state, nextState;
+parameter A = 3'b000, B = 3'b001, C = 3'b010, D = 3'b011, E = 3'b100, F = 3'b101;
+
+always@(posedge clk or negedge reset)
+begin
+	if(reset == 0)
+	state <= A;
+	else
+	state <= nextState;
+end
+
+always@(posedge clk)
+begin
+	case(state)
+		A:begin
+			nextState = B;
+		end
+		
+		B:begin
+			nextState = C;
+		end
+		
+		C:begin
+			nextState = D;
+		end
+		
+		D:begin
+			nextState = E;
+		end
+		
+		E:begin
+			nextState = F;
+		end
+		
+		F:begin
+			nextState = A;
+		end
+	endcase
+end

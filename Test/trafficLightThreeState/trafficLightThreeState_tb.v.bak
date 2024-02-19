@@ -1,0 +1,3 @@
+module trafficLightThreeState_tb;
+
+endmodule

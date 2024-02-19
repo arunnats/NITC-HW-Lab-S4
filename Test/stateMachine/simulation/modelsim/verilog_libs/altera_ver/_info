@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Test/stateMachine/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1707019519
+Z1 !s110 1707657007
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 ID:iD7Z8K2@]7`ebSaEY3@3
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1707019518.000000
+Z7 !s108 1707657007.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
@@ -219,7 +219,7 @@ R9
 R10
 R11
 vcarry
-Z12 !s110 1707019518
+R1
 !i10b 1
 !s100 0ICFPGeo=D<cUPW66HGND3
 Iz77ijUON;W9jNnEaNoOT_1
@@ -240,7 +240,7 @@ R9
 R10
 R11
 vcarry_sum
-R12
+R1
 !i10b 1
 !s100 7Wh^>o51d99jMK2ao5S<71
 IUD^nFJ]d?cXXUV3ZY:V:73
@@ -261,7 +261,7 @@ R9
 R10
 R11
 vcascade
-R12
+R1
 !i10b 1
 !s100 8molX8AzAGGlLiJMkCdJW0
 IRJ:XU5CAM:UL6SISR?AQR2
@@ -408,7 +408,7 @@ R9
 R10
 R11
 vdlatch
-R12
+R1
 !i10b 1
 !s100 @85hOhGK>a^XM6b@9o1:C1
 I`>Uld2`k]ak<WG9Fnk`?O3
@@ -429,7 +429,7 @@ R9
 R10
 R11
 vexp
-R12
+R1
 !i10b 1
 !s100 S8Hlo[BJ@]GA_;PLCDLHF0
 I=SAG4oJo4?Rh]dlWBh1KJ1
@@ -450,7 +450,7 @@ R9
 R10
 R11
 vglobal
-R12
+R1
 !i10b 1
 !s100 PYc0FeJbjBoPb`HNl3=W20
 IjW[SP3Wnn_Qm`<AYgZdd41
@@ -513,7 +513,7 @@ R9
 R10
 R11
 vlatch
-R12
+R1
 !i10b 1
 !s100 SljCB6z>O0ag<9GE1XRE60
 IcDh8W3EM[:kgH;m84^_Bf1
@@ -534,7 +534,7 @@ R9
 R10
 R11
 vlut_input
-R12
+R1
 !i10b 1
 !s100 A74hWU1l783Jb@M@NEWL[1
 ILUP=liJSlfeL2;PGCfoQP0
@@ -555,7 +555,7 @@ R9
 R10
 R11
 vlut_output
-R12
+R1
 !i10b 1
 !s100 5>H;6j^=[5d^^S6cY3?7I1
 IAbSMIZC?A[jXH>Y<=Ea[^2
@@ -576,7 +576,7 @@ R9
 R10
 R11
 vopndrn
-R12
+R1
 !i10b 1
 !s100 SbP7Lmfm2l3o<=VUXXj^V2
 IYKVRNCV6>QR23UE0jfX8W3
@@ -597,7 +597,7 @@ R9
 R10
 R11
 vprim_gdff
-R12
+R1
 !i10b 1
 !s100 8=[YT[GZFNUQTId@gUWVb2
 ITJKzN]6:3W>:]<EWCeEA92
@@ -618,7 +618,7 @@ R9
 R10
 R11
 UPRIM_GDFF_HIGH
-R1
+Z12 !s110 1707657008
 !i10b 1
 !s100 SScBZ?gdYFgRTOVYmj^Jh2
 IS;TWnh1CJ8`9MIWm4RnN_0
@@ -640,7 +640,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@h@i@g@h
 UPRIM_GDFF_HIGH_SCLR_PRIORITY
-!s110 1707019520
+R12
 !i10b 1
 !s100 F63MIm7BDi6=;U3:nVoTc3
 Ij;=HTKU[9kBUfQHzoB8Z91
@@ -684,7 +684,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@l@o@w
 UPRIM_GDFF_LOW_SCLR_PRIORITY
-R1
+R12
 !i10b 1
 !s100 `gUo^mjm:1ILUg``]kfOO1
 I;0TWHzA1j]G?4`@LQiDh:0
@@ -769,7 +769,7 @@ R9
 R10
 R11
 vrow_global
-R12
+R1
 !i10b 1
 !s100 8a3J8?I7z9`=o0f7A<3H@2
 I=D0We<035lMZi5e@B`WS=0
@@ -790,7 +790,7 @@ R9
 R10
 R11
 vsoft
-R12
+R1
 !i10b 1
 !s100 N?lNK?YVRSjaSdS3kflgD0
 IKNKC68BeC:5RkgJ?D>Unm1
@@ -895,7 +895,7 @@ R9
 R10
 R11
 vTRI
-R12
+R1
 !i10b 1
 !s100 zijCJ15AMfmk_^o0@gG2o2
 IDJiii2h66O:?04O6gCiO>3

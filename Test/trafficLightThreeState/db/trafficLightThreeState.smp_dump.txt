@@ -1,0 +1,9 @@
+
+State Machine - |trafficLightThreeState|state
+Name state.F state.E state.D state.C state.B state.A 
+state.A 0 0 0 0 0 0 
+state.B 0 0 0 0 1 1 
+state.C 0 0 0 1 0 1 
+state.D 0 0 1 0 0 1 
+state.E 0 1 0 0 0 1 
+state.F 1 0 0 0 0 1 

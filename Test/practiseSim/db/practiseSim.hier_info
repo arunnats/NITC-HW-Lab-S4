@@ -1,0 +1,10 @@
+|practiseSim
+y << y.DB_MAX_OUTPUT_PORT_TYPE
+x => y.DATAB
+x => state.s1.DATAIN
+x => Selector0.IN1
+x => nextState.s2.DATAB
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+
+

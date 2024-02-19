@@ -1,0 +1,17 @@
+|trafficLightThreeState
+NS_green <= NS_green~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EW_green <= EW_green~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NS_yellow <= NS_yellow~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EW_yellow <= EW_yellow~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NS_red <= NS_red~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EW_red <= EW_red~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => EW_red~reg0.CLK
+clk => EW_yellow~reg0.CLK
+clk => EW_green~reg0.CLK
+clk => NS_red~reg0.CLK
+clk => NS_yellow~reg0.CLK
+clk => NS_green~reg0.CLK
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+
+
