@@ -1,116 +1,104 @@
-    .data
-prompt_start:   .asciiz "Enter the starting number of the range: "
-prompt_end:     .asciiz "Enter the ending number of the range: "
-result_prime:   .asciiz "Prime numbers in the range are: "
-result_none:    .asciiz "No prime numbers in the given range."
+.data
+message:  .asciiz "Prime numbers between %d and %d are:\n"
+prompt1:  .asciiz "Enter lower limit: "
+prompt2:  .asciiz "Enter upper limit: "
+result:   .asciiz "Total prime numbers found: %d\n"
 
-    .text
-    .globl main
+.text
+.globl main
 
 main:
-    # Prompt user for the starting number of the range
-    li $v0, 4
-    la $a0, prompt_start
-    syscall
+  # Print prompt for lower limit
+  li $v0, 4        # syscall code for print string
+  la $a0, prompt1  # load address of prompt string
+  syscall
 
-    # Read the starting number
-    li $v0, 5
-    syscall
-    move $t0, $v0  # Store the starting number in $t0
+  # Read lower limit from user
+  li $v0, 5        # syscall code for read integer
+  syscall
+  move $t0, $v0    # store lower limit in temporary register
 
-    # Prompt user for the ending number of the range
-    li $v0, 4
-    la $a0, prompt_end
-    syscall
+  # Print prompt for upper limit
+  li $v0, 4        # syscall code for print string
+  la $a0, prompt2  # load address of prompt string
+  syscall
 
-    # Read the ending number
-    li $v0, 5
-    syscall
-    move $t1, $v0  # Store the ending number in $t1
+  # Read upper limit from user
+  li $v0, 5        # syscall code for read integer
+  syscall
+  move $t1, $v0    # store upper limit in temporary register
 
-    # Print the prime numbers in the given range
-    li $v0, 4
-    la $a0, result_prime
-    syscall
+  li $s0, 0        # initialize prime count to 0
 
-    # Initialize variables for checking prime numbers
-    move $t2, $t0  # Copy the starting number to $t2
-    jal check_primes  # Jump to the check_primes subroutine
+loop:
+  # Check if current number is less than or equal to upper limit
+  bgt $t0, $t1, done  # if not, jump to done
 
-    # Print a new line before exiting
-    li $v0, 4
-    la $a0, newline
-    syscall
+  # Check if current number is prime
+  move $a0, $t0    # pass current number to isPrime function
+  jal isPrime      # call isPrime function
 
-    # Exit the program
-    li $v0, 10
-    syscall
+  # Check if isPrime returned true (prime number found)
+  beq $v0, 1, print_prime
 
-# Subroutine to check and print prime numbers in a range
-check_primes:
-    check_prime_loop:
-        # Check if $t2 is prime
-        jal is_prime  # Jump to the is_prime subroutine
+  # Increment counter if prime number is found
+  addi $s0, $s0, 1
 
-        # If $v0 is 1 (prime), print the number
-        beqz $v0, not_prime
+print_prime:
+  li $v0, 1         # syscall code for print integer
+  move $a0, $t0     # pass current number to print function
+  syscall
 
-        # Print the prime number
-        li $v0, 1
-        move $a0, $t2
-        syscall
+  # Print newline character
+  li $v0, 4         # syscall code for print string
+  la $a0, newline   # load address of newline string
+  syscall
 
-        # Print a space after each prime number
-        li $v0, 4
-        la $a0, space
-        syscall
+inc_t0:
+  addi $t0, $t0, 1  # increment current number
+  j loop            # jump back to loop
 
-        not_prime:
-        addi $t2, $t2, 1  # Increment $t2
-        blt $t2, $t1, check_prime_loop  # If $t2 is less than $t1, continue the loop
+done:
+  # Print total number of prime numbers found
+  li $v0, 4         # syscall code for print string
+  la $a0, result    # load address of result string
+  syscall
+  
+  move $a0, $s0       # pass prime count to print function
+  li $v0, 1         # syscall code for print integer
+  syscall
 
-    ret:
-    jr $ra  # Return to the calling routine
+  # Print newline character
+  li $v0, 4         # syscall code for print string
+  la $a0, newline   # load address of newline string
+  syscall
 
-# Subroutine to check if a number is prime
-is_prime:
-    # Preserve $ra
-    sw $ra, 0($sp)
-    sub $sp, $sp, 4
+  # Exit the program
+  li $v0, 10        # syscall code for exit
+  syscall
 
-    # Initialize variables for divisor loop
-    li $t3, 2  # Start with divisor 2
+isPrime:
+  # Logic to check if a number is prime
+  # This is a simple implementation, replace it with your own logic
+  li $v0, 0          # assume the number is not prime
+  li $t2, 2          # start checking from 2
+  blt $a0, $t2, prime  # if the number is less than 2, it's not prime
+  move $t3, $a0       # store current number in temporary register
+  div_loop:
+    beq $t2, $t3, prime  # if divisor equals current number, it's prime
+    div $t3, $t2      # divide current number by divisor
+    mfhi $t4          # get remainder
+    beqz $t4, not_prime  # if remainder is zero, not prime
+    addi $t2, $t2, 1  # increment divisor
+    j div_loop        # repeat division loop
 
-    divisor_loop:
-        beq $t3, $t2, prime_result  # If divisor equals the number, exit the loop
+prime:
+  li $v0, 1          # return 1 to indicate prime
+  jr $ra             # return to caller
 
-        # Check if $t3 is a divisor
-        divu $t2, $t3
-        mfhi $t4
+not_prime:
+  li $v0, 0          # return 0 to indicate not prime
+  jr $ra             # return to caller
 
-        # If remainder is 0, $t2 is not prime
-        beqz $t4, not_prime_result
-
-        j increment_divisor
-
-    not_prime_result:
-        li $v0, 0  # Set $v0 to 0 (not prime)
-        j end_is_prime
-
-    increment_divisor:
-        addi $t3, $t3, 1  # Increment divisor
-        j divisor_loop
-
-    prime_result:
-        li $v0, 1  # Set $v0 to 1 (prime)
-
-    end_is_prime:
-    # Restore $ra
-    lw $ra, 0($sp)
-    add $sp, $sp, 4
-
-    jr $ra  # Return to the calling routine
-
-    .data
-space:    .asciiz " "
-newline:  .asciiz "\n"
+.data
+newline: .asciiz "\n"
