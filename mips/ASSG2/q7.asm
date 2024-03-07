@@ -5,7 +5,6 @@
     msg3: .asciiz "Prime numbers in the range: "
 
 .text
-.globl main
 
 main:
     li $v0, 4
