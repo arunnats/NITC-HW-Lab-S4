@@ -1,76 +1,103 @@
-    .data
-prompt_array:   .asciiz "Enter the array elements (space-separated): "
-prompt_key:     .asciiz "Enter the key to search: "
-result_found:   .asciiz "Element found at index: "
-result_not_found: .asciiz "Element not found in the array."
+.data
+    newline:    .asciiz "\n"
+    prompt1:    .asciiz "Enter the number of elements: "
+    prompt2:    .asciiz "Enter element: "
+    prompt3:    .asciiz "Array elements: "
+    not_found:  .asciiz "Element not found.\n"
+    found:      .asciiz "Element found at index "
 
-    .text
-    .globl main
+    # Maximum array size
+    max_size:   .word 100
+
+    # Array to store elements
+    array:      .space 400  # Adjust the size based on the maximum expected number of elements
+
+.text
+.globl main
 
 main:
-    # Prompt user for array elements
+    # Display prompt for the number of elements
     li $v0, 4
-    la $a0, prompt_array
+    la $a0, prompt1
     syscall
 
-    # Read array elements
-    li $v0, 8
-    la $a0, array
-    li $a1, 256  # Assuming a maximum of 256 elements
+    # Read the number of elements
+    li $v0, 5
+    syscall
+    move $s0, $v0  # $s0 now contains the number of elements
+
+    # Display prompt for each array element
+    la $v0, 4
+    la $a0, prompt2
     syscall
 
-    # Prompt user for the key to search
+    # Initialize array index
+    li $t0, 0
+
+    # Loop to take input for each array element
+input_loop:
+    # Display prompt for array element
     li $v0, 4
-    la $a0, prompt_key
+    la $a0, prompt3
+    syscall
+
+    # Read array element
+    li $v0, 5
+    syscall
+    sw $v0, array($t0)  # Store the element in the array
+
+    # Increment array index
+    addi $t0, $t0, 4
+
+    # Decrement the number of elements
+    addi $s0, $s0, -1
+    bnez $s0, input_loop  # Continue the loop if more elements need to be input
+
+    # Ask user for the element to search
+    li $v0, 4
+    la $a0, prompt2
     syscall
 
     # Read the key
     li $v0, 5
     syscall
-    move $t0, $v0  # Store the key in $t0
+    move $s1, $v0  # $s1 now contains the key to search
 
-    # Perform linear search
-    li $t1, 0  # Initialize index to 0
-    li $t2, -1  # Initialize flag to -1 (not found)
+    # Linear search in the array
+    li $t0, 0        # Reset array index to 0
 
-    linear_search_loop:
-        beq $t1, $a1, end_linear_search  # If index equals array size, exit the loop
+search_loop:
+    lw $t2, array($t0)  # Load the current element from the array
 
-        lw $t3, array($t1)  # Load the element at the current index
+    # Check if the current element is equal to the key
+    beq $t2, $s1, element_found
 
-        # Check if the current element is equal to the key
-        beq $t3, $t0, element_found
+    # Increment array index
+    addi $t0, $t0, 4
 
-        # Increment index and continue the loop
-        addi $t1, $t1, 1
-        j linear_search_loop
+    # Check if the end of the array is reached
+    bge $t0, max_size, element_not_found
 
-    element_found:
-        move $t2, $t1  # Set the flag to the current index
-        j end_linear_search
+    # Continue the search loop
+    j search_loop
 
-    end_linear_search:
-    # Print the result
-    beqz $t2, not_found
+element_found:
+    # Display the index where the key is found
     li $v0, 4
-    la $a0, result_found
+    la $a0, found
     syscall
-
-    # Print the index where the element was found
     li $v0, 1
-    move $a0, $t2
+    move $a0, $t0
     syscall
-    j end
+    j exit_program
 
-    not_found:
+element_not_found:
+    # Display a message if the key is not found
     li $v0, 4
-    la $a0, result_not_found
+    la $a0, not_found
     syscall
 
-    end:
-    # Exit the program
+exit_program:
+    # Exit program
     li $v0, 10
     syscall
-
-    .data
-array: .space 256  # Array to store the input elements
