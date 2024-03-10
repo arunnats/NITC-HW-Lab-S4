@@ -91,11 +91,19 @@
  	
  	L2: bge $s5, $s1, DONE 
  	
- 	lw $s7, 0($s6) #s7 has arr2[i]
+ 	lw $s7, 0($s6) #s7 has arr2[i] to take value from array
  	# logic
+ 	
+ 	#to update value in array
+ 	sw $s7, 0($s6)
+ 	
  	j UPDATE
  	
  	UPDATE:
  	addi $s5, $s5, 1 # i++
  	addi $s6, $s6, 4 # move array pointer
  	j L1 # repeat loop
+ 	
+ 	
+ 	li $v0, 10 #end 
+        syscall
