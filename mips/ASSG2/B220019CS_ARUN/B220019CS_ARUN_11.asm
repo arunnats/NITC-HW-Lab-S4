@@ -1,7 +1,7 @@
 .data
     newline:    .asciiz "\n"
     prompt:     .asciiz "Enter a string: "
-    theString:  .space 64 
+    theString:  .space 64
 .text
     main:
         li $v0, 4
