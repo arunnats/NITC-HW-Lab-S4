@@ -36,6 +36,7 @@
         j convert_loop
 
         convert_done:
+       
 
         # Print the binary equivalent
         li $v0, 4
