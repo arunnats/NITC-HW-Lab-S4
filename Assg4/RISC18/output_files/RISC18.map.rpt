@@ -1,0 +1,595 @@
+Analysis & Synthesis report for RISC18
+Sat Apr  6 22:27:51 2024
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Apr  6 22:27:51 2024          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                      ; RISC18                                         ;
+; Top-level Entity Name              ; RISC18                                         ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 747                                            ;
+;     Total combinational functions  ; 653                                            ;
+;     Dedicated logic registers      ; 224                                            ;
+; Total registers                    ; 224                                            ;
+; Total pins                         ; 146                                            ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; RISC18             ; RISC18             ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; RISC18.v                         ; yes             ; User Verilog HDL File  ; C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 747         ;
+;                                             ;             ;
+; Total combinational functions               ; 653         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 420         ;
+;     -- 3 input functions                    ; 190         ;
+;     -- <=2 input functions                  ; 43          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 587         ;
+;     -- arithmetic mode                      ; 66          ;
+;                                             ;             ;
+; Total registers                             ; 224         ;
+;     -- Dedicated logic registers            ; 224         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 146         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 288         ;
+; Total fan-out                               ; 3460        ;
+; Average fan-out                             ; 2.96        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |RISC18                    ; 653 (653)           ; 224 (224)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 146  ; 0            ; 0          ; |RISC18             ; RISC18      ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; PC[1][10]                                           ; reset               ; yes                    ;
+; PC[2][10]                                           ; reset               ; yes                    ;
+; PC[0][10]                                           ; reset               ; yes                    ;
+; PC[3][10]                                           ; reset               ; yes                    ;
+; PC[2][9]                                            ; reset               ; yes                    ;
+; PC[1][9]                                            ; reset               ; yes                    ;
+; PC[0][9]                                            ; reset               ; yes                    ;
+; PC[3][9]                                            ; reset               ; yes                    ;
+; PC[2][11]                                           ; reset               ; yes                    ;
+; PC[1][11]                                           ; reset               ; yes                    ;
+; PC[0][11]                                           ; reset               ; yes                    ;
+; PC[3][11]                                           ; reset               ; yes                    ;
+; PC[1][14]                                           ; reset               ; yes                    ;
+; PC[2][14]                                           ; reset               ; yes                    ;
+; PC[0][14]                                           ; reset               ; yes                    ;
+; PC[3][14]                                           ; reset               ; yes                    ;
+; PC[1][15]                                           ; reset               ; yes                    ;
+; PC[2][15]                                           ; reset               ; yes                    ;
+; PC[0][15]                                           ; reset               ; yes                    ;
+; PC[3][15]                                           ; reset               ; yes                    ;
+; PC[2][12]                                           ; reset               ; yes                    ;
+; PC[1][12]                                           ; reset               ; yes                    ;
+; PC[0][12]                                           ; reset               ; yes                    ;
+; PC[3][12]                                           ; reset               ; yes                    ;
+; PC[2][13]                                           ; reset               ; yes                    ;
+; PC[1][13]                                           ; reset               ; yes                    ;
+; PC[0][13]                                           ; reset               ; yes                    ;
+; PC[3][13]                                           ; reset               ; yes                    ;
+; PC[2][4]                                            ; reset               ; yes                    ;
+; PC[1][4]                                            ; reset               ; yes                    ;
+; PC[0][4]                                            ; reset               ; yes                    ;
+; PC[3][4]                                            ; reset               ; yes                    ;
+; PC[1][3]                                            ; reset               ; yes                    ;
+; PC[2][3]                                            ; reset               ; yes                    ;
+; PC[0][3]                                            ; reset               ; yes                    ;
+; PC[3][3]                                            ; reset               ; yes                    ;
+; PC[1][5]                                            ; reset               ; yes                    ;
+; PC[2][5]                                            ; reset               ; yes                    ;
+; PC[0][5]                                            ; reset               ; yes                    ;
+; PC[3][5]                                            ; reset               ; yes                    ;
+; PC[1][7]                                            ; reset               ; yes                    ;
+; PC[2][7]                                            ; reset               ; yes                    ;
+; PC[0][7]                                            ; reset               ; yes                    ;
+; PC[3][7]                                            ; reset               ; yes                    ;
+; PC[2][6]                                            ; reset               ; yes                    ;
+; PC[1][6]                                            ; reset               ; yes                    ;
+; PC[0][6]                                            ; reset               ; yes                    ;
+; PC[3][6]                                            ; reset               ; yes                    ;
+; PC[2][8]                                            ; reset               ; yes                    ;
+; PC[1][8]                                            ; reset               ; yes                    ;
+; PC[0][8]                                            ; reset               ; yes                    ;
+; PC[3][8]                                            ; reset               ; yes                    ;
+; PC[1][0]                                            ; reset               ; yes                    ;
+; PC[2][0]                                            ; reset               ; yes                    ;
+; PC[0][0]                                            ; reset               ; yes                    ;
+; PC[3][0]                                            ; reset               ; yes                    ;
+; PC[2][1]                                            ; reset               ; yes                    ;
+; PC[1][1]                                            ; reset               ; yes                    ;
+; PC[0][1]                                            ; reset               ; yes                    ;
+; PC[3][1]                                            ; reset               ; yes                    ;
+; PC[1][2]                                            ; reset               ; yes                    ;
+; PC[2][2]                                            ; reset               ; yes                    ;
+; PC[0][2]                                            ; reset               ; yes                    ;
+; PC[3][2]                                            ; reset               ; yes                    ;
+; Number of user-specified and inferred latches = 64  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; PCIndex[16..31]                        ; Lost fanout        ;
+; Total Number of Removed Registers = 16 ;                    ;
++----------------------------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                     ;
++---------------+--------------------+--------------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal ; Registers Removed due to This Register                                                     ;
++---------------+--------------------+--------------------------------------------------------------------------------------------+
+; PCIndex[31]   ; Lost Fanouts       ; PCIndex[30], PCIndex[29], PCIndex[28], PCIndex[27], PCIndex[26], PCIndex[25], PCIndex[24], ;
+;               ;                    ; PCIndex[23], PCIndex[22], PCIndex[21], PCIndex[20], PCIndex[19], PCIndex[18], PCIndex[17], ;
+;               ;                    ; PCIndex[16]                                                                                ;
++---------------+--------------------+--------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 224   ;
+; Number of registers using Synchronous Clear  ; 72    ;
+; Number of registers using Synchronous Load   ; 41    ;
+; Number of registers using Asynchronous Clear ; 224   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 142   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; register[2][0]                         ; 5       ;
+; register[1][0]                         ; 5       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 16 bits   ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |RISC18|ans[8]~reg0        ;
+; 17:1               ; 16 bits   ; 176 LEs       ; 32 LEs               ; 144 LEs                ; Yes        ; |RISC18|PCIndex[18]        ;
+; 11:1               ; 16 bits   ; 112 LEs       ; 32 LEs               ; 80 LEs                 ; Yes        ; |RISC18|PCIndex[2]         ;
+; 19:1               ; 9 bits    ; 108 LEs       ; 18 LEs               ; 90 LEs                 ; Yes        ; |RISC18|register[6][9]     ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |RISC18|register[6][4]     ;
+; 19:1               ; 9 bits    ; 108 LEs       ; 18 LEs               ; 90 LEs                 ; Yes        ; |RISC18|register[5][15]    ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |RISC18|register[5][6]     ;
+; 19:1               ; 9 bits    ; 108 LEs       ; 18 LEs               ; 90 LEs                 ; Yes        ; |RISC18|register[4][12]    ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |RISC18|register[4][5]     ;
+; 19:1               ; 9 bits    ; 108 LEs       ; 18 LEs               ; 90 LEs                 ; Yes        ; |RISC18|register[3][11]    ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |RISC18|register[3][0]     ;
+; 19:1               ; 9 bits    ; 108 LEs       ; 18 LEs               ; 90 LEs                 ; Yes        ; |RISC18|register[1][9]     ;
+; 19:1               ; 6 bits    ; 72 LEs        ; 12 LEs               ; 60 LEs                 ; Yes        ; |RISC18|register[1][6]     ;
+; 19:1               ; 9 bits    ; 108 LEs       ; 18 LEs               ; 90 LEs                 ; Yes        ; |RISC18|register[0][9]     ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |RISC18|register[0][3]     ;
+; 10:1               ; 9 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |RISC18|register[2][7]     ;
+; 10:1               ; 6 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |RISC18|register[2][4]     ;
+; 14:1               ; 9 bits    ; 81 LEs        ; 18 LEs               ; 63 LEs                 ; Yes        ; |RISC18|register[7][12]    ;
+; 14:1               ; 7 bits    ; 63 LEs        ; 14 LEs               ; 49 LEs                 ; Yes        ; |RISC18|register[7][4]     ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |RISC18|Mux43              ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RISC18|Mux35              ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RISC18|Mux8               ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RISC18|Mux61              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 146                         ;
+; cycloneiii_ff         ; 224                         ;
+;     CLR               ; 66                          ;
+;     CLR SLD           ; 16                          ;
+;     ENA CLR           ; 54                          ;
+;     ENA CLR SCLR      ; 63                          ;
+;     ENA CLR SCLR SLD  ; 9                           ;
+;     ENA CLR SLD       ; 16                          ;
+; cycloneiii_lcell_comb ; 654                         ;
+;     arith             ; 66                          ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 31                          ;
+;     normal            ; 588                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 159                         ;
+;         4 data inputs ; 420                         ;
+;                       ;                             ;
+; Max LUT depth         ; 11.50                       ;
+; Average LUT depth     ; 6.26                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Sat Apr  6 22:27:39 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISC18 -c RISC18
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file risc18.v
+    Info (12023): Found entity 1: RISC18 File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file risc18_tb.v
+    Info (12023): Found entity 1: RISC18_tb File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18_tb.v Line: 1
+Info (12127): Elaborating entity "RISC18" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at RISC18.v(13): object "returnIndex" assigned a value but never read File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 13
+Warning (10036): Verilog HDL or VHDL warning at RISC18.v(24): object "C" assigned a value but never read File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 24
+Warning (10036): Verilog HDL or VHDL warning at RISC18.v(24): object "Z" assigned a value but never read File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 24
+Warning (10230): Verilog HDL assignment warning at RISC18.v(81): truncated value with size 16 to match size of target (1) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 81
+Warning (10230): Verilog HDL assignment warning at RISC18.v(99): truncated value with size 32 to match size of target (16) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 99
+Warning (10034): Output port "k" at RISC18.v(7) has no driver File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+Info (10041): Inferred latch for "PC[0][0]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][1]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][2]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][3]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][4]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][5]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][6]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][7]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][8]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][9]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][10]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][11]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][12]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][13]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][14]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[0][15]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][0]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][1]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][2]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][3]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][4]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][5]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][6]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][7]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][8]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][9]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][10]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][11]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][12]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][13]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][14]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[1][15]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][0]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][1]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][2]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][3]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][4]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][5]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][6]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][7]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][8]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][9]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][10]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][11]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][12]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][13]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][14]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[2][15]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][0]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][1]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][2]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][3]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][4]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][5]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][6]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][7]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][8]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][9]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][10]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][11]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][12]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][13]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][14]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (10041): Inferred latch for "PC[3][15]" at RISC18.v(51) File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (13000): Registers with preset signals will power-up high File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 51
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "k[0]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[1]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[2]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[3]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[4]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[5]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[6]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[7]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[8]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[9]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[10]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[11]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[12]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[13]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[14]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[15]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[16]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[17]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[18]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[19]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[20]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[21]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[22]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[23]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[24]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[25]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[26]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[27]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[28]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[29]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[30]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[31]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[32]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[33]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[34]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[35]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[36]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[37]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[38]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[39]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[40]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[41]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[42]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[43]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[44]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[45]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[46]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[47]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[48]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[49]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[50]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[51]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[52]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[53]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[54]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[55]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[56]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[57]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[58]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[59]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[60]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[61]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[62]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+    Warning (13410): Pin "k[63]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/RISC18.v Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/output_files/RISC18.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 925 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 80 output pins
+    Info (21061): Implemented 779 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Sat Apr  6 22:27:51 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:12
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg4/RISC18/output_files/RISC18.map.smsg.
+
+

@@ -1,0 +1,38 @@
+module RISC18_tb;
+	reg[63:0] PCin;
+	reg clock;
+	reg reset;
+	wire [15:0] ans;
+	wire zero;
+	wire carry;
+	wire [63:0] k;
+	
+	initial
+	begin
+		PCin[63:48] = 16'b0101011000000010;
+		PCin[47:32] = 16'b000001000101100;
+		PCin[31:16] = 16'b0100001000000011;
+		PCin[15:0] = 16'b1000000000000000;
+	end
+	
+	RISC18_tb RISC18(.PCin(PCin), .clock(clock), .reset(reset), .ans(ans), .zero(zero), .carry(carry), .k(k));
+	
+	initial 
+	begin 
+		reset = 1;
+		#5
+		clock = 1;
+		#5
+		clock = 0;
+		reset = 0;
+		#5
+		clock = 1;
+	end
+	
+	always
+	begin
+		#5 clock = ~clock;
+	end
+	
+	
+		

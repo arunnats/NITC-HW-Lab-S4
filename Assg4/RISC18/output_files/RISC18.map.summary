@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Apr  6 22:27:51 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : RISC18
+Top-level Entity Name : RISC18
+Family : MAX 10
+Total logic elements : 747
+    Total combinational functions : 653
+    Dedicated logic registers : 224
+Total registers : 224
+Total pins : 146
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,13 @@
+module RISC18(
+	input wire [63:0] PNin,
+	input wire clock,
+	input wire reset,
+	output reg [15:0] ans,
+	output wire zero,
+	output wire carry
+)
+
+reg [15:0] register [7:0];
+
+integer PCIndex = 0;
+integer returnIndex = 0;
