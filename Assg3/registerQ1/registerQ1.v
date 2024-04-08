@@ -11,11 +11,11 @@ reg [15:0] sixteenBitRegister;
 always @(posedge clk or negedge reset)
 begin
 
-if(reset==1'b0)
+if(reset==0)
    begin
 	
 	sixteenBitRegister <= 16'b0;
-	
+	read_port_1 <= 16'b0;
 	end
 	
 else

@@ -1,0 +1,37 @@
+|registerQ3
+write_port_1[0] => reg_data[0].DATAIN
+write_port_1[1] => reg_data[1].DATAIN
+write_port_1[2] => reg_data[2].DATAIN
+write_port_1[3] => reg_data[3].DATAIN
+write_port_1[4] => reg_data[4].DATAIN
+write_port_1[5] => reg_data[5].DATAIN
+write_port_1[6] => reg_data[6].DATAIN
+write_port_1[7] => reg_data[7].DATAIN
+clk => reg_data[0].CLK
+clk => reg_data[1].CLK
+clk => reg_data[2].CLK
+clk => reg_data[3].CLK
+clk => reg_data[4].CLK
+clk => reg_data[5].CLK
+clk => reg_data[6].CLK
+clk => reg_data[7].CLK
+read_enable => always1.IN0
+write_enable => always1.IN1
+write_enable => reg_data[0].ENA
+write_enable => reg_data[1].ENA
+write_enable => reg_data[2].ENA
+write_enable => reg_data[3].ENA
+write_enable => reg_data[4].ENA
+write_enable => reg_data[5].ENA
+write_enable => reg_data[6].ENA
+write_enable => reg_data[7].ENA
+read_port_1[0] <= read_port_1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[1] <= read_port_1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[2] <= read_port_1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[3] <= read_port_1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[4] <= read_port_1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[5] <= read_port_1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[6] <= read_port_1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+read_port_1[7] <= read_port_1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5/simulation/modelsim
+vregisterQ5
+Z1 !s110 1712517021
+!i10b 1
+!s100 iIgzh1Uc5@GBPFmcR;6ih3
+IzcJh0<bBHdbPU_PQD0=453
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1712516884
+Z4 8C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5/registerQ5.v
+Z5 FC:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5/registerQ5.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1712517021.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5/registerQ5.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5|C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5/registerQ5.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ5
+Z12 tCvgOpt 0
+nregister@q5
+vregisterQ5_tb
+R1
+!i10b 1
+!s100 F:86lP;zo<_Yc[EmmG?m>1
+IgaKEjL=H=SHb[0FdO<20M1
+R2
+R0
+R3
+R4
+R5
+L0 88
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nregister@q5_tb

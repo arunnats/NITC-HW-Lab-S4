@@ -72,11 +72,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "choice",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "choice",
 					"strict" : false
 				},
 				{

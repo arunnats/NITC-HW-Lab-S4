@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "read_port_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "read_port_1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "read_enable",
+					"strict" : false
+				},
+				{
+					"name" : "write_enable",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "write_port_1[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

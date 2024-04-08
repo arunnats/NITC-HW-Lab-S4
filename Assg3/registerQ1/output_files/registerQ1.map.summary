@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Mar 24 18:59:48 2024
+Analysis & Synthesis Status : Successful - Sun Apr  7 23:48:31 2024
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : registerQ1
 Top-level Entity Name : registerQ1
 Family : MAX 10
-Total logic elements : 33
-    Total combinational functions : 1
+Total logic elements : 32
+    Total combinational functions : 0
     Dedicated logic registers : 32
 Total registers : 32
 Total pins : 35

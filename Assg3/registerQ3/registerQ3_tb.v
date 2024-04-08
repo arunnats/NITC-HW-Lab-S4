@@ -5,9 +5,7 @@ module registerQ3_tb();
     reg [31:0] write_port_1;
     wire [31:0] read_port_1;
 
-    registerQ3 #(
-        .DATA_WIDTH(32)
-    ) testbench(
+    registerQ3 #(.DATA_WIDTH(32)) testbench(
         .write_port_1(write_port_1),
         .clk(clk),
         .read_enable(read_enable),

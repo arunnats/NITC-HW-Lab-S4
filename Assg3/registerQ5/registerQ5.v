@@ -1,46 +1,114 @@
-module registerQ5(
-    input [4:0] read_addr_1,
-    input [4:0] read_addr_2,
-    input [4:0] read_addr_3,
-    input [4:0] read_addr_4,
-    input [4:0] write_addr_1,
-    input [4:0] write_addr_2,
-    input [63:0] write_data_1,
-    input [63:0] write_data_2,
-    input read_enable_1,
-    input read_enable_2,
-    input read_enable_3,
-    input read_enable_4,
-    input write_enable_1,
-    input write_enable_2,
-    output reg [63:0] read_data_1,
-    output reg [63:0] read_data_2,
-    output reg [63:0] read_data_3,
-    output reg [63:0] read_data_4
-);
+module registerQ5 #(parameter width = 64, depth = 32) (
+	input [width - 1:0] write_data_1,
+	write_data_2,
+	input [5:0] write_port_1,
+	write_port_2,
+	read_port_1,
+	read_port_2,
+	read_port_3,
+	read_port_4,
+	input write_enable,
+	read_enable,
+	clk,
+	reset,
+	output reg [width - 1:0] read_data_1,
+	read_data_2,
+	read_data_3,
+	read_data_4
+); 
+	
+	reg [width - 1:0] register[0:depth - 1];
+	integer i;
+	initial 
+		begin
+		for(i = 0; i < depth; i = i + 1) 
+			begin
+				register[i] = 0;
+			end
+	end
+	
+	always@(posedge clk or posedge reset) 
+		begin
+			if(reset) 
+				begin
+					read_data_1 = 64'bx;
+					read_data_2 = 64'bx;
+					read_data_3 = 64'bx;
+					read_data_4 = 64'bx;
+					for(i = 0; i < depth; i = i + 1) 
+						begin
+							register[i]=0;
+						end
+				end
+			else 
+				begin
+				if(write_enable && read_enable) 
+					begin
+						if(write_port_1 == write_port_2) 
+							begin
+								register[write_port_1] = write_data_1;
+								read_data_1 = register[read_port_1];
+								read_data_2 = register[read_port_2];
+								read_data_3 = register[read_port_3];
+								read_data_4 = register[read_port_4];
+							end
+						else 
+							begin
+								register[write_port_1] = write_data_1;
+								register[write_port_2] = write_data_2;
+								read_data_1 = register[read_port_1];
+								read_data_2 = register[read_port_2];
+								read_data_3 = register[read_port_3];
+								read_data_4 = register[read_port_4];
+							end
+					end
+				else if(write_enable) 
+					begin
+						if(write_port_1 == write_port_2) 
+							begin
+								register[write_port_1]=write_data_1;
+							end
+					else 
+						begin
+							register[write_port_1] = write_data_1;
+							register[write_port_2] = write_data_2;
+						end
+					end
+				else if(read_enable) 
+					begin
+						read_data_1 = register[read_port_1];
+						read_data_2 = register[read_port_2];
+						read_data_3 = register[read_port_3];
+						read_data_4 = register[read_port_4];
+					end
+				end
+		end
+endmodule
 
-    reg [63:0] registers [31:0];
-
-    always @(*) begin
-        if (read_enable_1) read_data_1 = registers[read_addr_1];
-        else read_data_1 = 64'bzzzzzzzzzzzzzzzz;
-
-        if (read_enable_2) read_data_2 = registers[read_addr_2];
-        else read_data_2 = 64'bzzzzzzzzzzzzzzzz;
-
-        if (read_enable_3) read_data_3 = registers[read_addr_3];
-        else read_data_3 = 64'bzzzzzzzzzzzzzzzz;
-
-        if (read_enable_4) read_data_4 = registers[read_addr_4];
-        else read_data_4 = 64'bzzzzzzzzzzzzzzzz;
-    end
-
-    always @(posedge write_enable_1) begin
-        registers[write_addr_1] <= write_data_1;
-    end
-
-    always @(posedge write_enable_2) begin
-        registers[write_addr_2] <= write_data_2;
-    end
-
+module registerQ5_tb #(parameter width = 64);
+	reg [width - 1:0]write_data_1, write_data_2;
+	reg [5:0] write_port_1, write_port_2, read_port_1, read_port_2, read_port_3, read_port_4;
+	reg write_enable, read_enable, clk, reset;
+	wire [width - 1:0]read_data_1, read_data_2, read_data_3, read_data_4;
+	
+	registerQ5 instance1 (write_data_1, write_data_2, write_port_1, write_port_2, read_port_1, read_port_2, read_port_3, read_port_4, write_enable, read_enable, clk, reset, read_data_1, read_data_2, read_data_3, read_data_4);
+	
+	initial clk=1'b1;
+	
+	initial 
+		begin
+		 write_data_1 = 100;
+		 write_data_2 = 75;
+		 write_port_1 = 0;
+		 write_port_2 = 1;
+		 read_port_1 = 0;
+		 read_port_2 = 1;
+		 read_port_3 = 2;
+		 read_port_4 = 3;
+		 write_enable = 1;
+		 read_enable = 1;
+		 reset = 0;
+		 #10;
+		end
+	always #5 clk <= ~clk;
 endmodule

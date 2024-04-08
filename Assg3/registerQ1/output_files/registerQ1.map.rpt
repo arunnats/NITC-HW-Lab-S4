@@ -1,5 +1,5 @@
 Analysis & Synthesis report for registerQ1
-Sun Mar 24 18:59:48 2024
+Sun Apr  7 23:48:31 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -44,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 24 18:59:48 2024          ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr  7 23:48:31 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; registerQ1                                     ;
 ; Top-level Entity Name              ; registerQ1                                     ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 33                                             ;
-;     Total combinational functions  ; 1                                              ;
+; Total logic elements               ; 32                                             ;
+;     Total combinational functions  ; 0                                              ;
 ;     Dedicated logic registers      ; 32                                             ;
 ; Total registers                    ; 32                                             ;
 ; Total pins                         ; 35                                             ;
@@ -180,16 +180,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 33        ;
+; Estimated Total logic elements              ; 32        ;
 ;                                             ;           ;
-; Total combinational functions               ; 1         ;
+; Total combinational functions               ; 0         ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 0         ;
 ;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 1         ;
+;     -- <=2 input functions                  ; 0         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1         ;
+;     -- normal mode                          ; 0         ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
 ; Total registers                             ; 32        ;
@@ -202,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 32        ;
-; Total fan-out                               ; 165       ;
-; Average fan-out                             ; 1.60      ;
+; Total fan-out                               ; 179       ;
+; Average fan-out                             ; 1.75      ;
 +---------------------------------------------+-----------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |registerQ1                ; 1 (1)               ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |registerQ1         ; registerQ1  ; work         ;
+; |registerQ1                ; 0 (0)               ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |registerQ1         ; registerQ1  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -225,7 +225,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
@@ -234,20 +234,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 35                          ;
-; cycloneiii_ff         ; 32                          ;
-;     ENA               ; 16                          ;
-;     ENA CLR           ; 16                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         2 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.06                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 35                              ;
+; cycloneiii_ff     ; 32                              ;
+;     ENA CLR       ; 32                              ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -265,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sun Mar 24 18:59:35 2024
+    Info: Processing started: Sun Apr  7 23:48:20 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off registerQ1 -c registerQ1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -277,16 +273,16 @@ Info (12127): Elaborating entity "registerQ1" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 33 logic cells
+    Info (21061): Implemented 32 logic cells
 Info (144001): Generated suppressed messages file C:/Users/hiaru/Documents/GitHub/NITC-HW-Lab-S4/Assg3/registerQ1/output_files/registerQ1.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Sun Mar 24 18:59:48 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Sun Apr  7 23:48:31 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +------------------------------------------+

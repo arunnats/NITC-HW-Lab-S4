@@ -1,6 +1,5 @@
-module registerQ3 #(
-    parameter DATA_WIDTH = 8
-)(
+module registerQ3 #(parameter DATA_WIDTH = 8)
+(
     input [(DATA_WIDTH-1):0] write_port_1,
     input clk,
     input read_enable,

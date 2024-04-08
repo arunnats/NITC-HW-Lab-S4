@@ -1,0 +1,24 @@
+module registerQ6 #(parameter WIDTH = 8, DEPTH = 4)
+(	
+	input [WIDTH-1:0] writeLine1,
+	input [WIDTH-1:0] writeLine2,
+	input [WIDTH-1:0] writeLine3,
+	input [WIDTH-1:0] writeLine4,
+	input choice,
+	input reset,
+	input clock,
+	input [1:0] writeLineSelect,
+	input [1:0] readLineSelect,
+	output reg [WIDTH-1:0] readLine1,
+	output reg [WIDTH-1:0] readLine2,
+	output reg [WIDTH-1:0] readLine3,
+	output reg [WIDTH-1:0] readLine4
+)
+
+reg [WIDTH-1:0] register [0:DEPTH-1];
+integer i;
+parameter READ = 1b'0, WRITE = 1b'0;
+
+
+
+endmodule

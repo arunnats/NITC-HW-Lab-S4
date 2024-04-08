@@ -1,4 +1,5 @@
-module registerQ2(
+module registerQ2
+(
    input [15:0] write_port_1,
 	input [15:0] write_port_2,
 	input clk,
@@ -31,11 +32,13 @@ begin
 			begin
 				sixteenBitRegister <= write_port_1;
 				read_port_1 <= 16'bx;
+				portChoice <= 1'b1;
 			end
 			else if(portChoice == 1)
 			begin
 				sixteenBitRegister <= write_port_2;
 				read_port_1 <= 16'bx;
+				portChoice <= 1'b0;
 			end
 			
 		end
